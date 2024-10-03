@@ -7,43 +7,46 @@
     <title>Your AI Therapist</title>
   </head>
   <body>
-    <header>
-      <h1>Your AI Therapist</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Your Personal AI Therapist</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="What is in your mind..."
-          required
-          autofocus
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-    </main>
-    <div>
-      You can't control the situation but you can control your reaction...
-      <br />
-      Your feelings are valid, and it's OK to feel this way...
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="What is in your mind..."
+            required
+            autofocus
+            autocomplete="off"
+            class="text-input"
+          />
+          <input type="submit" class="button-input" />
+        </form>
+      </main>
+      <div class="advice">
+        You can't control the situation but you can control your reaction...
+        <br />
+        Your feelings are valid, and it's OK to feel this way...
+      </div>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/DinaraMiller" target="_blank"
+          >Dinara Miller</a
+        >
+        with 💛 is open-sourced on
+        <a
+          href="https://github.com/DinaraMiller/your-ai-therapist"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://your-ai-therapist.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
     </div>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/DinaraMiller" target="_blank"
-        >Dinara Miller</a
-      >
-      with 💛 is open-sourced on
-      <a
-        href="https://github.com/DinaraMiller/your-ai-therapist"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://your-ai-therapist.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
     <script src="script.js"></script>
   </body>
 </html>
