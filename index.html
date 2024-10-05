@@ -15,20 +15,23 @@
       </header>
 
       <main>
-        <form id="advice-generator-form">
-          <input
-            type="text"
-            placeholder="What is in your mind..."
-            required
-            autofocus
-            autocomplete="off"
-            class="text-input"
-            id="text-input"
-          />
-          <input type="submit" class="button-input" />
-        </form>
+        <div class="form-container">
+          <form id="advice-generator-form">
+            <input
+              type="text"
+              placeholder="What is in your mind..."
+              required
+              autofocus
+              autocomplete="off"
+              class="text-input"
+              id="text-input"
+            />
+            <input type="submit" class="button-input" />
+          </form>
+          <div class="hint">i.e: delighted or feeling stressed...</div>
+        </div>
       </main>
-      <div class="advice" id="advice"></div>
+      <div class="advice hidden" id="advice"></div>
       <footer>
         This AI project was coded by
         <a href="https://github.com/DinaraMiller" target="_blank"

@@ -22,10 +22,13 @@ h1 {
 }
 
 form {
+  display: flex;
+}
+
+.form-container {
   background-color: rgb(243, 241, 241);
   border-radius: 10px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  display: flex;
   padding: 30px;
   margin-bottom: 30px;
 }
@@ -49,6 +52,13 @@ form {
   width: 150px;
 }
 
+.hint {
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 10px;
+  margin-left: 10px;
+  opacity: 0.5;
+}
 .advice {
   background-color: rgb(243, 241, 241);
   border-left: 3px solid rgba(209, 164, 0, 0.946);
@@ -57,10 +67,27 @@ form {
   padding: 30px;
   line-height: 2;
 }
+.hidden {
+  display: none;
+}
 
 footer {
   color: rgb(60, 56, 56, 0.9);
   font-size: 12px;
   text-align: center;
   margin-top: 15px;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

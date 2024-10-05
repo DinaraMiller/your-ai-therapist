@@ -17,6 +17,10 @@ function advisor(event) {
   let prompt = `User instructions: Generate an advice to the input ${adviceInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let adviceElement = document.querySelector("#advice");
+  adviceElement.classList.remove("hidden");
+  adviceElement.innerHTML = `<div class="generating">Generating an advice for you ⏳</div>`;
+
   axios.get(apiUrl).then(displayAdvice);
 }
 
