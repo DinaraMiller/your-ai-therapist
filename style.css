@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(182, 212, 236);
+  background-color: rgb(213, 232, 247);
   font-family: sans-serif;
 }
 
@@ -44,7 +44,7 @@ form {
 
 .button-input {
   background-color: rgba(209, 164, 0, 0.946);
-  border: 1px solid rgba(39, 33, 66, 0.5);
+  border: none;
   border-radius: 50px;
   color: whitesmoke;
   font-weight: bold;
@@ -72,7 +72,7 @@ form {
 }
 
 footer {
-  color: rgb(60, 56, 56, 0.9);
+  color: rgb(60, 56, 56, 0.8);
   font-size: 12px;
   text-align: center;
   margin-top: 15px;
